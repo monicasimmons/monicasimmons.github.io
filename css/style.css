@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.618em;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: darkmagenta;
+}
+
+h2 > p {
+  text-align: center;
+}
+
+header {
+  padding: 2em 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header span {
+  font-size: 1.5em;
+  color: darkmagenta;
+}
+
+html {
+  font-size: 16px;
+  margin-top: 2em;
+}
+
+nav {
+  background: #333;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  color: #fff;
+  padding: 0.5em 2em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #666;
+}
+
+p {
+  padding: 0.5em 0;
+}
+
+section {
+  min-height: 7em;
+}
+
+section > ul {
+  padding-left: 1.5em;
+}
+
+#monicaHighlights {
+  text-align: center;
+}
+
+#highlights article {
+  background: #ccc;
+  padding: 1em;
+}
+
+#highlights article img {
+  border: 1px solid darkmagenta;
+  width: 100%;
+}
+
+#projectDetails article {
+  background: #ccc;
+  padding: 1em;
+}

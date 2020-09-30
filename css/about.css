@@ -1,0 +1,23 @@
+#contactInfo {
+  margin-top: 1.5em;
+}
+
+#profiles {
+  margin-top: 1.5em;
+}
+
+#techSkills {
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
