@@ -1,68 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Professional Portfolio | Monica Simmons</title>
-    <link rel="stylesheet" type="text/css" href="css\layout.css" />
-    <link rel="stylesheet" type="text/css" href="css\style.css" />
-  </head>
-  <nav>
+    <link rel="stylesheet" type="text/css" href="css\layout.css"/>
+    <link rel="stylesheet" type="text/css" href="css\style.css"/>
+</head>
+<nav id = "navId">
     <a href="about.html">About Me</a>
     <a href="projects.html">My Projects</a>
-  </nav>
-  <body>
-    <header>
-      <img src="assets\header.jpg" width="800px" height="200px" />
-      <h1>Full Stack Developer in Cleveland, OH</h1>
-      <span
-        >Creating powerful, responsive websites that are search engine
+</nav>
+<body>
+    <button class = "navButton">Show/Hide Navigation</button>
+<header>
+    <img src="assets\header.jpg" width="800px" height="200px"/>
+    <h1>Full Stack Developer in Cleveland, OH</h1>
+    <span
+    >Creating powerful, responsive websites that are search engine
         optimized</span
-      >
-    </header>
+    >
+</header>
 
-    <main>
-      <section id="intro">
+<main>
+<button id="bioButton">View Bio</button>
+
+<div id="myModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Hi, my name is Monica Simmons, and I am a newly certified full stack
+        software developer. I graduated from the We Can Code IT bootcamp in
+        December 2020. I have 9 years of digital marketing experience with a
+        specific focus on UX and SEO.</p>
+  </div>
+
+</div>
+    <!-- <section id="intro">
         <p>
-          Hi, my name is Monica Simmons, and I am a newly certified full stack
-          software developer. I graduated from the We Can Code IT bootcamp in
-          December 2020. I have 9 years of digital marketing experience with a
-          specific focus on UX and SEO.
+            Hi, my name is Monica Simmons, and I am a newly certified full stack
+            software developer. I graduated from the We Can Code IT bootcamp in
+            December 2020. I have 9 years of digital marketing experience with a
+            specific focus on UX and SEO.
         </p>
-      </section>
-      <section id="monicaHighlights">
+    </section> -->
+    <section id="monicaHighlights">
         <div id="highlights">
-          <article>
-            <h3>Java Specialist</h3>
-            <img src="assets\java.jpg" />
-            <p>
-              <strong>Carrying the Load.</strong> I do the heavy lifting
-              utilizing Java to create websites to do exactly what you need them
-              to do!
-            </p>
-          </article>
-          <article>
-            <h3>HTML & CSS Wizard</h3>
-            <img src="assets\htmlcss.jpg" />
-            <p>
-              <strong>Looking Good.</strong> I make the websites look pleasing
-              to the eye, utilizing HTML and CSS to enhance user experience.
-            </p>
-          </article>
-          <article>
-            <h3>Google Guru</h3>
-            <img src="assets\seo.jpg" />
-            <p>
-              <strong>Finders Keepers.</strong> Why create a good-looking
-              website that functions well if no one can find it? I'm your go-to
-              girl for SEO.
-            </p>
-          </article>
+            <article>
+                <h3>Java Specialist</h3>
+                <img src="assets\java.jpg"/>
+                <p>
+                    <strong>Carrying the Load.</strong> I do the heavy lifting
+                    utilizing Java to create websites to do exactly what you need them
+                    to do!
+                </p>
+            </article>
+            <article>
+                <h3>HTML & CSS Wizard</h3>
+                <img src="assets\htmlcss.jpg"/>
+                <p>
+                    <strong>Looking Good.</strong> I make the websites look pleasing
+                    to the eye, utilizing HTML and CSS to enhance user experience.
+                </p>
+            </article>
+            <article>
+                <h3>Google Guru</h3>
+                <img src="assets\seo.jpg"/>
+                <p>
+                    <strong>Finders Keepers.</strong> Why create a good-looking
+                    website that functions well if no one can find it? I'm your go-to
+                    girl for SEO.
+                </p>
+            </article>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2020 Monica Simmons</p>
-    </footer>
-  </body>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2020 Monica Simmons</p>
+</footer>
+<script src="/app.js"></script>
+</body>
 </html>
