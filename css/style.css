@@ -10,7 +10,7 @@ h1,
 h2,
 h3 {
   text-align: center;
-  color: darkmagenta;
+  color: rgb(109, 106, 109);
 }
 
 h2 > p {
@@ -40,10 +40,11 @@ nav {
   display: flex;
   flex-flow: row;
   justify-content: center;
-  left: 0;
-  position: fixed;
-  top: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  position: auto;
   width: 100%;
+  padding: 0.5em;
 }
 
 nav a {
@@ -68,8 +69,97 @@ section > ul {
   padding-left: 1.5em;
 }
 
-#monicaHighlights {
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.collapsibleDescription,
+.projectButton {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
   text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.active,
+.collapsibleDescription:hover,
+.projectButton:hover {
+  background-color: #555;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.navButton {
+  background-color: darkslateblue;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  font-size: 14px;
+  width: 10%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0.5em 0;
+  position: auto;
+  justify-content: center;
+}
+
+#bioButton {
+  background-color: darkslateblue;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  font-size: 14px;
+  width: 50%;
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0.5em 0;
+  position: auto;
+  justify-content: center;
 }
 
 #highlights article {
@@ -82,7 +172,57 @@ section > ul {
   width: 100%;
 }
 
+#images {
+  width: 2900px;
+  height: 500px;
+  overflow: hidden;
+  animation: slideImages 30s infinite;
+}
+
+#images img {
+  float: left;
+}
+
+@keyframes slideImages {
+  0% {
+    margin-left: 0px;
+  }
+  25% {
+    margin-left: -725px;
+  }
+  50% {
+    margin-left: -1450px;
+  }
+  75% {
+    margin-left: -2175px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+#monicaHighlights {
+  text-align: center;
+}
+
 #projectDetails article {
   background: #ccc;
   padding: 1em;
+}
+
+#projectsContainer {
+  margin: 2rem auto;
+  width: 725px;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#slider {
+  width: 725px;
+  height: 500px;
+  overflow: hidden;
+  border: 10px solid#777;
 }
