@@ -1,13 +1,13 @@
-const toggleNav = document.querySelector(".navButton");
-toggleNav.addEventListener("click", showNavigation);
-function showNavigation() {
-  const navBar = document.getElementById("navId");
-  if (navBar.style.display === "none") {
-    navBar.style.display = "flex";
-  } else {
-    navBar.style.display = "none";
-  }
-}
+// const toggleNav = document.querySelector(".navButton");
+// toggleNav.addEventListener("click", showNavigation);
+// function showNavigation() {
+//   const navBar = document.getElementById("navId");
+//   if (navBar.style.display === "none") {
+//     navBar.style.display = "flex";
+//   } else {
+//     navBar.style.display = "none";
+//   }
+// }
 
 var coll = document.getElementsByClassName("collapsibleDescription");
 var i;
@@ -25,7 +25,7 @@ for (i = 0; i < coll.length; i++) {
 }
 
 var modal = document.getElementById("myModal");
-
+var modalClass = document.getElementsByClassName("modal");
 var bioButton = document.getElementById("bioButton");
 
 var span = document.getElementsByClassName("close")[0];
